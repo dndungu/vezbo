@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="timeSheet" title="timeSheet.label" class="form-horizontal" primaryKey="timeSheetID">
+	<field name="userID" type="int" length="20" label="userID.label">
+		<element name="userID" type="text" placeholder="userID.placeholder"><class>required</class><class>string</class></element>
+	</field>
+	<field name="employeeID" type="int" length="10" label="employeeID.label">
+		<element name="employeeID" type="text" placeholder="employeeID.placeholder"><class>required</class><class>string</class></element>
+	</field>
+	<field name="clientID" type="int" length="10" label="clientID.label">
+		<element name="clientID" type="text" placeholder="clientID.placeholder"><class>required</class><class>string</class></element>
+	</field>
+	<field name="projectID" type="int" length="10" label="projectID.label">
+		<element name="projectID" type="text" placeholder="projectID.placeholder"><class>required</class><class>string</class></element>
+	</field>
+	<field name="startTime" type="time" label="startTime.label">
+		<element name="startTime" type="text" placeholder="startTime.placeholder"><class>required</class><class>string</class></element>
+	</field>
+	<field name="startMeridiem" type="enum" length="'AM'" precision="'PM'" label="startMeridiem.label">
+		<element name="startMeridiem" type="text" placeholder="startMeridiem.placeholder"><class>required</class><class>string</class></element>
+	</field>
+	<field name="stopTime" type="time" label="stopTime.label">
+		<element name="stopTime" type="text" placeholder="stopTime.placeholder"><class>required</class><class>string</class></element>
+	</field>
+	<field name="stopMeridiem" type="enum" length="'AM'" precision="'PM'" label="stopMeridiem.label">
+		<element name="stopMeridiem" type="text" placeholder="stopMeridiem.placeholder"><class>required</class><class>string</class></element>
+	</field>
+	<field name="theDate" type="date" label="theDate.label">
+		<element name="theDate" type="text" placeholder="theDate.placeholder"><class>datepicker</class><class>required</class><class>string</class></element>
+	</field>
+	<field name="creationTime" type="autogenerate" length="10" label="creationTime.label">
+		<element name="creationTime" type="text" placeholder="creationTime.placeholder"><class>required</class><class>string</class></element>
+	</field>
+	<button name="action" type="submit" value="action.continue"><class>gridPrimaryButton</class></button>
+	<button name="cancel" type="button" value="action.dismiss"><class>gridSecondaryButton</class></button>
+</form>

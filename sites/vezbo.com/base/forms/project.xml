@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="project" title="project.label" class="form-horizontal" primaryKey="">
+	<field name="ID" type="int" length="10" label="ID.label">
+		<element name="ID" type="text" placeholder="ID.placeholder"><class>required</class><class>string</class></element>
+	</field>
+	<field name="name" type="varchar" length="255" label="project.label">
+		<element name="name" type="text" placeholder="project.placeholder"><class>required</class><class>string</class></element>
+	</field>
+	<field name="creationTime" type="autogenerate" length="10" label="creationTime.label">
+		<element name="creationTime" type="text" placeholder="creationTime.placeholder"><class>required</class><class>string</class></element>
+	</field>
+	<button name="action" type="submit" value="action.continue"><class>gridPrimaryButton</class></button>
+	<button name="cancel" type="button" value="action.dismiss"><class>gridSecondaryButton</class></button>
+</form>

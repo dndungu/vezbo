@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grid name="timeSheet" title="TimeSheets.label" columnBar="true" mode="secondary" layout="rows" footerBar="true">
+	<records>
+		<query>
+			<browse></browse>
+			<count></count>
+		</query>
+		<leftjoin></leftjoin>
+		<orderColumn>`timeSheet`.`timeSheetID`</orderColumn>
+		<orderDirection>desc</orderDirection>
+		<search parameters="1">`timeSheetID` = %d</search>
+	</records>
+	<columns primaryKey="`timeSheet`.`timeSheetID`">
+		<column name="timeSheetID" field="`timeSheet`.`timeSheetID`" title="timeSheetID.label" class="grid1"></column>
+		<column name="userID" field="`timeSheet`.`userID`" title="userID.label" class="grid1"></column>
+		<column name="employeeID" field="`timeSheet`.`employeeID`" title="employeeID.label" class="grid1"></column>
+		<column name="clientID" field="`timeSheet`.`clientID`" title="clientID.label" class="grid1"></column>
+		<column name="projectID" field="`timeSheet`.`projectID`" title="projectID.label" class="grid1"></column>
+		<column name="startTime" field="`timeSheet`.`startTime`" title="startTime.label" class="grid1"></column>
+		<column name="startMeridiem" field="`timeSheet`.`startMeridiem`" title="startMeridiem.label" class="grid1"></column>
+		<column name="stopTime" field="`timeSheet`.`stopTime`" title="stopTime.label" class="grid1"></column>
+		<column name="stopMeridiem" field="`timeSheet`.`stopMeridiem`" title="stopMeridiem.label" class="grid1"></column>
+		<column name="theDate" field="`timeSheet`.`theDate`" title="theDate.label" class="grid1"></column>
+		<column name="creationTime" field="`timeSheet`.`creationTime`" title="creationTime.label" class="grid1"></column>
+	</columns>
+</grid>

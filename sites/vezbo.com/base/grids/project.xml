@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grid name="project" title="Projects.label" columnBar="true" mode="secondary" layout="rows" footerBar="true">
+	<records>
+		<query>
+			<browse></browse>
+			<count></count>
+		</query>
+		<leftjoin></leftjoin>
+		<orderColumn>`project`.``</orderColumn>
+		<orderDirection>desc</orderDirection>
+		<search parameters="1">`` = %d</search>
+	</records>
+	<columns primaryKey="`project`.``">
+		<column name="ID" field="`project`.`ID`" title="ID.label" class="grid5"></column>
+		<column name="name" field="`project`.`name`" title="name.label" class="grid5"></column>
+		<column name="creationTime" field="`project`.`creationTime`" title="creationTime.label" class="grid5"></column>
+	</columns>
+</grid>

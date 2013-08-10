@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow name="timeSheet">
+	<select grid="grids/timeSheet.xml" view="forms/timeSheet.xml">
+		<access>
+			<permission>timeSheet.read.permission</permission>
+		</access>
+	</select>
+	<insert form="forms/timeSheet.xml" label="timeSheet.add.label">
+		<access>
+			<permission>timeSheet.create.permission</permission>
+		</access>
+	</insert>
+	<update form="forms/timeSheet.xml">
+		<access>
+			<permission>timeSheet.modify.permission</permission>
+		</access>
+	</update>
+	<delete label="timeSheet.modify.label">
+		<access>
+			<permission>timeSheet.modify.permission</permission>
+		</access>
+	</delete>
+</flow>

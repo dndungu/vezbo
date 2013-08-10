@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="profile" title="profile.label" class="form-horizontal" primaryKey="ID">
+	<field name="userID" type="int" length="20" label="userID.label">
+		<element name="userID" type="text" placeholder="userID.placeholder"><class>required</class><class>string</class></element>
+	</field>
+	<field name="name" type="varchar" length="255" label="profile.label">
+		<element name="name" type="text" placeholder="profile.placeholder"><class>required</class><class>string</class></element>
+	</field>
+	<field name="organisation" type="varchar" length="255" label="organisation.label">
+		<element name="organisation" type="text" placeholder="organisation.placeholder"><class>required</class><class>string</class></element>
+	</field>
+	<field name="creationTime" type="autogenerate" length="10" label="creationTime.label">
+		<element name="creationTime" type="text" placeholder="creationTime.placeholder"><class>required</class><class>string</class></element>
+	</field>
+	<button name="action" type="submit" value="action.continue"><class>gridPrimaryButton</class></button>
+	<button name="cancel" type="button" value="action.dismiss"><class>gridSecondaryButton</class></button>
+</form>

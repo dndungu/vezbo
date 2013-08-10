@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grid name="profile" title="Profiles.label" columnBar="true" mode="secondary" layout="rows" footerBar="true">
+	<records>
+		<query>
+			<browse></browse>
+			<count></count>
+		</query>
+		<leftjoin></leftjoin>
+		<orderColumn>`profile`.`ID`</orderColumn>
+		<orderDirection>desc</orderDirection>
+		<search parameters="1">`ID` = %d</search>
+	</records>
+	<columns primaryKey="`profile`.`ID`">
+		<column name="ID" field="`profile`.`ID`" title="ID.label" class="grid3"></column>
+		<column name="userID" field="`profile`.`userID`" title="userID.label" class="grid3"></column>
+		<column name="name" field="`profile`.`name`" title="name.label" class="grid3"></column>
+		<column name="organisation" field="`profile`.`organisation`" title="organisation.label" class="grid3"></column>
+		<column name="creationTime" field="`profile`.`creationTime`" title="creationTime.label" class="grid3"></column>
+	</columns>
+</grid>

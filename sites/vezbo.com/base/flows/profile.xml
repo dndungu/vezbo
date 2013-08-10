@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow name="profile">
+	<select grid="grids/profile.xml" view="forms/profile.xml">
+		<access>
+			<permission>profile.read.permission</permission>
+		</access>
+	</select>
+	<insert form="forms/profile.xml" label="profile.add.label">
+		<access>
+			<permission>profile.create.permission</permission>
+		</access>
+	</insert>
+	<update form="forms/profile.xml">
+		<access>
+			<permission>profile.modify.permission</permission>
+		</access>
+	</update>
+	<delete label="profile.modify.label">
+		<access>
+			<permission>profile.modify.permission</permission>
+		</access>
+	</delete>
+</flow>

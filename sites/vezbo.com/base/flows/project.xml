@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow name="project">
+	<select grid="grids/project.xml" view="forms/project.xml">
+		<access>
+			<permission>project.read.permission</permission>
+		</access>
+	</select>
+	<insert form="forms/project.xml" label="project.add.label">
+		<access>
+			<permission>project.create.permission</permission>
+		</access>
+	</insert>
+	<update form="forms/project.xml">
+		<access>
+			<permission>project.modify.permission</permission>
+		</access>
+	</update>
+	<delete label="project.modify.label">
+		<access>
+			<permission>project.modify.permission</permission>
+		</access>
+	</delete>
+</flow>
